@@ -1,0 +1,2592 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "stock_code",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "chinese",
+        "synonyms": ["Chinese", "Chines", "chines"]
+      },
+      {
+        "value": "hi",
+        "synonyms": ["expensive", "valued"]
+      },
+      {
+        "value": "lo",
+        "synonyms": ["cheap"]
+      },
+      {
+        "value": "stock",
+        "synonyms": ["share"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text":"BIDU",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "BIDU",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"JD",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "JD",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"BEST",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "BEST",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"TSLA",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "TSLA",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"BIDU",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "BIDU",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"SINA",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "SINA",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"SBUX",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "SBUX",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"MSFT",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "MSFT",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"WUBA",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "WUBA",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"BABA",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "BABA",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"TCEHY",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "TCEHY",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"SOHU",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "SOHU",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"XNET",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "XNET",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"ZTO",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "ZTO",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"FB",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "FB",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"not FB",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "not FB",
+            "entity": "negated_entity"
+          }
+        ]
+      },
+      {
+        "text":"not TSLA",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "not TSLA",
+            "entity": "negated_entity"
+          }
+        ]
+      },
+     {
+        "text":"BIDU and AAPL",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "BIDU",
+            "entity": "org"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "value": "AAPL",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"AAPL and FB",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "AAPL",
+            "entity": "org"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "value": "FB",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"BIDU,but not AAPL",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "BIDU",
+            "entity": "org"
+          },
+          {
+            "start": 9,
+            "end": 17,
+            "value": "not AAPL",
+            "entity": "negated_entity"
+          }
+        ]
+      },
+      {
+        "text":"AAPL,but not FB",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "AAPL",
+            "entity": "org"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "value": "not FB",
+            "entity": "negated_entity"
+          }
+        ]
+      },
+      {
+        "text":"not FB,but AAPL",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "not FB",
+            "entity": "negated_entity"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "value": "AAPL",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"ACGBY and CEA,but not SNP",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "ACGBY",
+            "entity": "org"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "value": "CEA",
+            "entity": "org"
+          },
+          {
+            "start": 18,
+            "end": 25,
+            "value": "not SNP",
+            "entity": "negated_entity"
+          }
+        ]
+      },
+       {
+        "text":"SOHU,ZTO,but not XNET",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "SOHU",
+            "entity": "org"
+          },
+          {
+            "start": 5,
+            "end": 8,
+            "value": "ZTO",
+            "entity": "org"
+          },
+          {
+            "start": 13,
+            "end": 21,
+            "value": "not XNET",
+            "entity": "negated_entity"
+          }
+        ]
+      },
+     {
+        "text":"SOHU,ZTO and XNET",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "SOHU",
+            "entity": "org"
+          },
+          {
+            "start": 5,
+            "end": 8,
+            "value": "ZTO",
+            "entity": "org"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "value": "XNET",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"VTSYF,IQ and SOGO,but not PDD",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "VTSYF",
+            "entity": "org"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "IQ",
+            "entity": "org"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "value": "SOGO",
+            "entity": "org"
+          },
+          {
+            "start": 22,
+            "end": 29,
+            "value": "not PDD",
+            "entity": "negated_entity"
+          }
+        ]
+      },
+     {
+        "text":"AAPL,TSLA and TCEHY share",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "AAPL",
+            "entity": "org"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "value": "TSLA",
+            "entity": "org"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "value": "TCEHY",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"not XNET,but GOOG,EBAY",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "not XNET",
+            "entity": "negated_entity"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "value": "GOOG",
+            "entity": "org"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "value": "EBAY",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"not XNET and INTC,but IBM",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "not XNET and INTC",
+            "entity": "negated_entity"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "value": "IBM",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"SOHU,ZTO,XNET and SINA",
+        "intent": "stock_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "SOHU",
+            "entity": "org"
+          },
+          {
+            "start": 5,
+            "end": 8,
+            "value": "ZTO",
+            "entity": "org"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "value": "XNET",
+            "entity": "org"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "value": "SINA",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What's the highest stock price?",
+        "intent": "highest_price_query",
+        "entities": []
+      },
+     {
+        "text":"the highest stock price",
+        "intent": "highest_price_query",
+        "entities": []
+      },
+     {
+        "text":"the highest price",
+        "intent": "highest_price_query",
+        "entities": []
+      },
+      {
+        "text":"What's the highest price of AMZN share on 2020-01-01?",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "AMZN",
+            "entity": "org"
+          },
+          {
+            "start": 42,
+            "end": 52,
+            "value": "2020-01-01",
+            "entity": "start_date"
+          }
+        ]
+      },
+     {
+        "text":"What's the highest stock price of FB?",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 35,
+            "end": 37,
+            "value": "FB",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the highest stock price of FB",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 28,
+            "end": 30,
+            "value": "FB",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What's the highest price of SINA?",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "SINA",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the highest price of SINA",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "SINA",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What's the highest price of SINA and TWTR?",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "SINA",
+            "entity": "org"
+          },
+         {
+            "start": 37,
+            "end": 41,
+            "value": "TWTR",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the highest price of SINA and TWTR",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "SINA",
+            "entity": "org"
+          },
+         {
+            "start": 30,
+            "end": 34,
+            "value": "TWTR",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"What's the highest price of SINA,TWTR and KO?",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "SINA",
+            "entity": "org"
+          },
+         {
+            "start": 33,
+            "end": 37,
+            "value": "TWTR",
+            "entity": "org"
+          },
+         {
+            "start": 42,
+            "end": 44,
+            "value": "KO",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the highest price of SINA,TWTR and KO",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "SINA",
+            "entity": "org"
+          },
+         {
+            "start": 26,
+            "end": 30,
+            "value": "TWTR",
+            "entity": "org"
+          },
+         {
+            "start": 35,
+            "end": 37,
+            "value": "KO",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"What's the highest price of JNJ,MDLZ,MCD and PEP?",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 28,
+            "end": 31,
+            "value": "JNJ",
+            "entity": "org"
+          },
+         {
+            "start": 32,
+            "end": 36,
+            "value": "MDLZ",
+            "entity": "org"
+          },
+         {
+            "start": 37,
+            "end": 40,
+            "value": "MCD",
+            "entity": "org"
+          },
+          {
+            "start": 45,
+            "end": 48,
+            "value": "PEP",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the highest price of JNJ,MDLZ,MCD and PEP",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 21,
+            "end": 24,
+            "value": "JNJ",
+            "entity": "org"
+          },
+         {
+            "start": 25,
+            "end": 29,
+            "value": "MDLZ",
+            "entity": "org"
+          },
+         {
+            "start": 30,
+            "end": 33,
+            "value": "MCD",
+            "entity": "org"
+          },
+          {
+            "start": 38,
+            "end": 41,
+            "value": "PEP",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"What's the highest price from 2020-01-01 to 2020-01-15?",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 30,
+            "end": 40,
+            "value": "2020-01-01",
+            "entity": "start_date"
+          },
+         {
+            "start": 44,
+            "end": 54,
+            "value": "2020-01-15",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"the highest price from 2020-01-01 to 2020-01-15",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 23,
+            "end": 33,
+            "value": "2020-01-01",
+            "entity": "start_date"
+          },
+         {
+            "start": 37,
+            "end": 47,
+            "value": "2020-01-15",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"the highest price of AMZN share on 2020-01-01",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "AMZN",
+            "entity": "org"
+          },
+          {
+            "start": 35,
+            "end": 45,
+            "value": "2020-01-01",
+            "entity": "start_date"
+          }
+        ]
+      },
+     {
+        "text":"What's the highest price of FB on 2017-05-01?",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 28,
+            "end": 30,
+            "value": "FB",
+            "entity": "org"
+          },
+          {
+            "start": 40,
+            "end": 50,
+            "value": "2017-05-01",
+            "entity": "start_date"
+          }
+        ]
+      },
+      {
+        "text":"the highest price of FB on 2017-05-01",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 21,
+            "end": 23,
+            "value": "FB",
+            "entity": "org"
+          },
+          {
+            "start": 33,
+            "end": 43,
+            "value": "2017-05-01",
+            "entity": "start_date"
+          }
+        ]
+      },
+      {
+        "text":"What's the highest price of FB share from 2017-03-01 to 2017-04-01?",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 28,
+            "end": 30,
+            "value": "FB",
+            "entity": "org"
+          },
+          {
+            "start": 42,
+            "end": 52,
+            "value": "2017-03-01",
+            "entity": "start_date"
+          },
+          {
+            "start": 56,
+            "end": 66,
+            "value": "2017-04-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"the highest price of FB share from 2017-03-01 to 2017-04-01",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 21,
+            "end": 23,
+            "value": "FB",
+            "entity": "org"
+          },
+          {
+            "start": 35,
+            "end": 45,
+            "value": "2017-03-01",
+            "entity": "start_date"
+          },
+          {
+            "start": 56,
+            "end": 66,
+            "value": "2017-04-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"What's the highest price of TSLA share from 2015-02-01 to 2016-03-01?",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "TSLA",
+            "entity": "org"
+          },
+          {
+            "start": 44,
+            "end": 54,
+            "value": "2015-02-01",
+            "entity": "start_date"
+          },
+          {
+            "start": 58,
+            "end": 68,
+            "value": "2016-03-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"What's the highest price of TSLA and SOGO from 2015-02-01 to 2016-03-01?",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "TSLA",
+            "entity": "org"
+          },
+          {
+            "start": 37,
+            "end": 41,
+            "value": "SOGO",
+            "entity": "org"
+          },
+          {
+            "start": 47,
+            "end": 57,
+            "value": "2015-02-01",
+            "entity": "start_date"
+          },
+          {
+            "start": 61,
+            "end": 71,
+            "value": "2016-03-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"the highest price of TSLA and SOGO from 2015-02-01 to 2016-03-01?",
+        "intent": "highest_price_query",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "TSLA",
+            "entity": "org"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "value": "SOGO",
+            "entity": "org"
+          },
+          {
+            "start": 40,
+            "end": 50,
+            "value": "2015-02-01",
+            "entity": "start_date"
+          },
+          {
+            "start": 54,
+            "end": 64,
+            "value": "2016-03-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"What's the lowest stock price?",
+        "intent": "lowest_price_query",
+        "entities": []
+      },
+      {
+        "text":"the lowest stock price",
+        "intent": "lowest_price_query",
+        "entities": []
+      },
+     {
+        "text":"the lowest price",
+        "intent": "lowest_price_query",
+        "entities": []
+      },
+      {
+        "text":"What's the lowest stock price of SINA?",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 33,
+            "end": 37,
+            "value": "SINA",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"What's the lowest price of TCEHY share?",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "TCEHY",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the lowest price of TCEHY share",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "TCEHY",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What's the lowest price of TCEHY and NKE?",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "TCEHY",
+            "entity": "org"
+          },
+          {
+            "start": 37,
+            "end": 40,
+            "value": "NKE",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the lowest price of TCEHY and NKE",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "TCEHY",
+            "entity": "org"
+          },
+          {
+            "start": 30,
+            "end": 33,
+            "value": "NKE",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What's the lowest price of TCEHY,WMT and PG?",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "TCEHY",
+            "entity": "org"
+          },
+          {
+            "start": 33,
+            "end": 36,
+            "value": "WMT",
+            "entity": "org"
+          },
+         {
+            "start": 41,
+            "end": 43,
+            "value": "PG",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the lowest price of TCEHY,WMT and PG",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "TCEHY",
+            "entity": "org"
+          },
+          {
+            "start": 26,
+            "end": 29,
+            "value": "WMT",
+            "entity": "org"
+          },
+         {
+            "start": 34,
+            "end": 36,
+            "value": "PG",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What's the lowest price of PCRFY,CVX,BA and UA?",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "PCRFY",
+            "entity": "org"
+          },
+          {
+            "start": 33,
+            "end": 36,
+            "value": "CVX",
+            "entity": "org"
+          },
+         {
+            "start": 37,
+            "end": 39,
+            "value": "BA",
+            "entity": "org"
+          },
+          {
+            "start": 44,
+            "end": 46,
+            "value": "UA",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the lowest price of PCRFY,CVX,BA and UA",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "PCRFY",
+            "entity": "org"
+          },
+          {
+            "start": 26,
+            "end": 29,
+            "value": "CVX",
+            "entity": "org"
+          },
+         {
+            "start": 30,
+            "end": 32,
+            "value": "BA",
+            "entity": "org"
+          },
+          {
+            "start": 37,
+            "end": 39,
+            "value": "UA",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"What's the lowest price of NTES share from 2017-09-01 to 2017-10-01?",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 27,
+            "end": 31,
+            "value": "NTES",
+            "entity": "org"
+          },
+          {
+            "start": 43,
+            "end": 53,
+            "value": "2017-09-01",
+            "entity": "start_date"
+          },
+          {
+            "start": 57,
+            "end": 67,
+            "value": "2017-10-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"the lowest price of NTES share from 2017-09-01 to 2017-10-01",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "NTES",
+            "entity": "org"
+          },
+          {
+            "start": 36,
+            "end": 46,
+            "value": "2017-09-01",
+            "entity": "start_date"
+          },
+          {
+            "start": 50,
+            "end": 60,
+            "value": "2017-10-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"What's the lowest price of NTES and AAPL share from 2017-09-01 to 2017-10-01?",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 27,
+            "end": 31,
+            "value": "NTES",
+            "entity": "org"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "value": "AAPL",
+            "entity": "org"
+          },
+          {
+            "start": 52,
+            "end": 62,
+            "value": "2017-09-01",
+            "entity": "start_date"
+          },
+          {
+            "start": 66,
+            "end": 76,
+            "value": "2017-10-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"the lowest price of NTES and AAPL share from 2017-09-01 to 2017-10-01",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "NTES",
+            "entity": "org"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "value": "AAPL",
+            "entity": "org"
+          },
+          {
+            "start": 45,
+            "end": 55,
+            "value": "2017-09-01",
+            "entity": "start_date"
+          },
+          {
+            "start": 59,
+            "end": 69,
+            "value": "2017-10-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"What's the price of SBUX share?",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "SBUX",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the lowest stock price of SINA",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 26,
+            "end": 30,
+            "value": "SINA",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"What's the lowest price from 2020-01-01 to 2020-01-15?",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 29,
+            "end": 39,
+            "value": "2020-01-01",
+            "entity": "start_date"
+          },
+         {
+            "start": 43,
+            "end": 53,
+            "value": "2020-01-15",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"the lowest price from 2020-01-01 to 2020-01-15",
+        "intent": "lowest_price_query",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "2020-01-01",
+            "entity": "start_date"
+          },
+         {
+            "start": 36,
+            "end": 46,
+            "value": "2020-01-15",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"What's the price?",
+        "intent": "price_query",
+        "entities": []
+      },
+      {
+        "text":"What's the price of BABA share?",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "BABA",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the price of BABA share",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "BABA",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What's the price of AAPL and SOGO?",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "AAPL",
+            "entity": "org"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "value": "SOGO",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the price of AAPL and SOGO",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "AAPL",
+            "entity": "org"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "SOGO",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What's the price of EDU,BABA and CHU?",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 20,
+            "end": 23,
+            "value": "EDU",
+            "entity": "org"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "value": "BABA",
+            "entity": "org"
+          },
+          {
+            "start": 33,
+            "end": 36,
+            "value": "CHU",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the price of EDU,BABA and CHU",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "EDU",
+            "entity": "org"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "value": "BABA",
+            "entity": "org"
+          },
+          {
+            "start": 26,
+            "end": 29,
+            "value": "CHU",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What's the price of PTR,VIPS,CHU and BSDGY?",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 20,
+            "end": 23,
+            "value": "PTR",
+            "entity": "org"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "value": "VIPS",
+            "entity": "org"
+          },
+          {
+            "start": 29,
+            "end": 32,
+            "value": "CHU",
+            "entity": "org"
+          },
+          {
+            "start": 37,
+            "end": 42,
+            "value": "BSDGY",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the price of PTR,VIPS,CHU and BSDGY",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "PTR",
+            "entity": "org"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "value": "VIPS",
+            "entity": "org"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "value": "CHU",
+            "entity": "org"
+          },
+          {
+            "start": 30,
+            "end": 35,
+            "value": "BSDGY",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What's the price from 2020-02-13 to 2020-03-02?",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "2020-02-13",
+            "entity": "start_date"
+          },
+          {
+            "start": 36,
+            "end": 46,
+            "value": "2020-03-02",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"the price from 2020-02-13 to 2020-03-02",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 15,
+            "end": 25,
+            "value": "2020-02-13",
+            "entity": "start_date"
+          },
+          {
+            "start": 29,
+            "end": 39,
+            "value": "2020-03-02",
+            "entity": "end_date"
+          }
+        ]
+      },
+     {
+        "text":"price from 2020-02-13 to 2020-03-02",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "2020-02-13",
+            "entity": "start_date"
+          },
+          {
+            "start": 25,
+            "end": 35,
+            "value": "2020-03-02",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"the price from 2017-01-15 to 2018-02-27",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 15,
+            "end": 25,
+            "value": "2017-01-15",
+            "entity": "start_date"
+          },
+          {
+            "start": 29,
+            "end": 39,
+            "value": "2018-02-27",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"price from 2017-01-15 to 2018-02-27",
+        "intent": "price_query",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "2017-01-15",
+            "entity": "start_date"
+          },
+          {
+            "start": 25,
+            "end": 35,
+            "value": "2018-02-27",
+            "entity": "end_date"
+          }
+        ]
+      },
+     {
+        "text":"from 2019-01-01 to 2019-03-01",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 5,
+            "end": 15,
+            "value": "2019-01-01",
+            "entity": "start_date"
+          },
+          {
+            "start": 19,
+            "end": 29,
+            "value": "2019-03-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+     {
+        "text":"from 2020-01-01 to 2020-02-01",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 5,
+            "end": 15,
+            "value": "2020-01-01",
+            "entity": "start_date"
+          },
+          {
+            "start": 19,
+            "end": 29,
+            "value": "2020-02-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"from 2020-01-05 to 2020-02-05",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 5,
+            "end": 15,
+            "value": "2020-01-05",
+            "entity": "start_date"
+          },
+          {
+            "start": 19,
+            "end": 29,
+            "value": "2020-02-05",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"from 2020-03-15 to 2020-04-23",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 5,
+            "end": 15,
+            "value": "2020-03-15",
+            "entity": "start_date"
+          },
+          {
+            "start": 19,
+            "end": 29,
+            "value": "2020-04-23",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"2020-01-01 to 2020-02-01",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "2020-01-01",
+            "entity": "start_date"
+          },
+          {
+            "start": 14,
+            "end": 24,
+            "value": "2020-02-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+     {
+        "text":"on 2020-01-01",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 3,
+            "end": 13,
+            "value": "2020-01-01",
+            "entity": "start_date"
+          }
+        ]
+      },
+      {
+        "text":"2020-01-01",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "2020-01-01",
+            "entity": "start_date"
+          }
+        ]
+      },
+     {
+        "text":"on 2017-06-01",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 3,
+            "end": 13,
+            "value": "2017-06-01",
+            "entity": "start_date"
+          }
+        ]
+      },
+     {
+        "text":"2017-06-01",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "2017-06-01",
+            "entity": "start_date"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 1 day",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "1d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 1 d",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "1d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 1day",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "1d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 1d",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 14,
+            "value": "1d",
+            "entity": "period"
+          }
+        ]
+      },
+     {
+        "text":"1 day",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "1d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"1day",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "1d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"1 d",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "1d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"1d",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "1d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 5 days",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "5d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 5 d",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "5d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 5days",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "5d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 5d",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 14,
+            "value": "5d",
+            "entity": "period"
+          }
+        ]
+      },
+     {
+        "text":"5 days",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end":6,
+            "value": "5d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"5 d",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "5d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"5days",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "5d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"5d",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "5d",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 1 month",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "1mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 1 mo",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "1mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 1month",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "1mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 1mo",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "1mo",
+            "entity": "period"
+          }
+        ]
+      },
+     {
+        "text":"1 month",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "1mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"1 mo",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "1mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"1month",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "1mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"1mo",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "1mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 3 months",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "3mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 3 mo",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "3mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 3months",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "3mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"the nearest 3mo",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "3mo",
+            "entity": "period"
+          }
+        ]
+      },
+     {
+        "text":"3 months",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "3mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"3 mo",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "3mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"3months",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "3mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"3mo",
+        "intent": "period_query",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "3mo",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text":"What was the volume?",
+        "intent": "volume_query",
+        "entities": []
+      },
+      {
+        "text":"What's the volume?",
+        "intent": "volume_query",
+        "entities": []
+      },
+      {
+        "text":"the volume",
+        "intent": "volume_query",
+        "entities": []
+      },
+     {
+        "text":"What was the volume of BEST share?",
+        "intent": "volume_query",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": "BEST",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What's the volume of BEST share?",
+        "intent": "volume_query",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "BEST",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the volume of BEST share",
+        "intent": "volume_query",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "BEST",
+            "entity": "org"
+          }
+        ]
+      },
+     {
+        "text":"What was the volume of WUBA?",
+        "intent": "volume_query",
+        "entities": [
+            {
+            "start": 23,
+            "end": 27,
+            "value": "WUBA",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What's the volume of WUBA?",
+        "intent": "volume_query",
+        "entities": [
+            {
+            "start": 21,
+            "end": 25,
+            "value": "WUBA",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the volume of WUBA",
+        "intent": "volume_query",
+        "entities": [
+            {
+            "start": 14,
+            "end": 18,
+            "value": "WUBA",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the volume of WUBA and TCOM",
+        "intent": "volume_query",
+        "entities": [
+            {
+            "start": 14,
+            "end": 18,
+            "value": "WUBA",
+            "entity": "org"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "value": "TCOM",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the volume of WUBA,TCOM and JG",
+        "intent": "volume_query",
+        "entities": [
+            {
+            "start": 14,
+            "end": 18,
+            "value": "WUBA",
+            "entity": "org"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "value": "TCOM",
+            "entity": "org"
+          },
+          {
+            "start": 28,
+            "end": 30,
+            "value": "JG",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"the volume of WUBA,TCOM,JG and QTT",
+        "intent": "volume_query",
+        "entities": [
+            {
+            "start": 14,
+            "end": 18,
+            "value": "WUBA",
+            "entity": "org"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "value": "TCOM",
+            "entity": "org"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "value": "JG",
+            "entity": "org"
+          },
+          {
+            "start": 31,
+            "end": 34,
+            "value": "QTT",
+            "entity": "org"
+          }
+        ]
+      },
+      {
+        "text":"What was the volume from 2019-01-01 to 2019-03-01?",
+        "intent": "volume_query",
+        "entities": [
+          {
+            "start": 25,
+            "end": 35,
+            "value": "2019-01-01",
+            "entity": "start_date"
+          },
+         {
+            "start": 39,
+            "end": 49,
+            "value": "2019-03-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"the volume from 2019-01-01 to 2019-03-01",
+        "intent": "volume_query",
+        "entities": [
+          {
+            "start": 16,
+            "end": 26,
+            "value": "2019-01-01",
+            "entity": "start_date"
+          },
+         {
+            "start": 30,
+            "end": 40,
+            "value": "2019-03-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"What's the volume on 2019-03-01?",
+        "intent": "volume_query",
+        "entities": [
+         {
+            "start": 21,
+            "end": 31,
+            "value": "2019-03-01",
+            "entity": "start_date"
+          }
+        ]
+      },
+      {
+        "text":"the volume on 2019-03-01",
+        "intent": "volume_query",
+        "entities": [
+         {
+            "start": 14,
+            "end": 24,
+            "value": "2019-03-01",
+            "entity": "start_date"
+          }
+        ]
+      },
+     {
+        "text":"What was the volume of MSFT share from 2019-01-01 to 2020-01-01?",
+        "intent": "volume_query",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": "MSFT",
+            "entity": "org"
+          },
+          {
+            "start": 39,
+            "end": 49,
+            "value": "2019-01-01",
+            "entity": "start_date"
+          },
+         {
+            "start": 53,
+            "end": 63,
+            "value": "2020-01-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+     {
+        "text":"What's the volume of MSFT share from 2019-01-01 to 2020-01-01?",
+        "intent": "volume_query",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "MSFT",
+            "entity": "org"
+          },
+          {
+            "start": 37,
+            "end": 47,
+            "value": "2019-01-01",
+            "entity": "start_date"
+          },
+         {
+            "start": 51,
+            "end": 61,
+            "value": "2020-01-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"the volume of MSFT share from 2019-01-01 to 2020-01-01",
+        "intent": "volume_query",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "MSFT",
+            "entity": "org"
+          },
+          {
+            "start": 30,
+            "end": 40,
+            "value": "2019-01-01",
+            "entity": "start_date"
+          },
+         {
+            "start": 44,
+            "end": 54,
+            "value": "2020-01-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+      {
+        "text":"the volume of MSFT and TCEHY from 2019-01-01 to 2020-01-01",
+        "intent": "volume_query",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "MSFT",
+            "entity": "org"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "value": "TCEHY",
+            "entity": "org"
+          },
+          {
+            "start": 34,
+            "end": 44,
+            "value": "2019-01-01",
+            "entity": "start_date"
+          },
+         {
+            "start": 48,
+            "end": 58,
+            "value": "2020-01-01",
+            "entity": "end_date"
+          }
+        ]
+      },
+     {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a good day",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "What's your name?",
+        "intent": "name_query",
+        "entities": []
+      },
+      {
+        "text": "What is your name?",
+        "intent": "name_query",
+        "entities": []
+      },
+      {
+        "text": "your name?",
+        "intent": "name_query",
+        "entities": []
+      }
+    ]
+  }
+}
