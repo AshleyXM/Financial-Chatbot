@@ -4,9 +4,9 @@
 
 # **Demo-Gif**
 
-![https://github.com/AshleyXM/Financial-Chatbot/blob/master/demo/demo-1.gif]()
+![demo-1.gif](https://github.com/AshleyXM/Financial-Chatbot/blob/master/demo/demo-1.gif)
 
-![https://github.com/AshleyXM/Financial-Chatbot/blob/master/demo/demo-2.gif]()
+![demo-2.gif](https://github.com/AshleyXM/Financial-Chatbot/blob/master/demo/demo-2.gif)
 
 # 配置环境（python==3.6.2）
 
@@ -24,17 +24,9 @@
 
    ```python
    pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
-   ```
-
    或
-
-   ```python
    pip install -i https://pypi.mirrors.ustc.edu.cn/simple/ -r requirements.txt
-   ```
-
    或
-
-   ```python
    pip install -i http://pypi.douban.com/simple/ -r requirements.txt
    ```
 
@@ -55,8 +47,6 @@
   
   pipeline: "spacy_sklearn"
   ```
-
-
 
 # 运行bot
 
