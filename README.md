@@ -4,7 +4,7 @@
 
 # **Demo-Gif**
 
-![demo-1.gif](https://github.com/AshleyXM/Financial-Chatbot/blob/master/demo/demo-1.gif)
+![demo.gif](https://github.com/AshleyXM/Financial-Chatbot/blob/master/demo/demo.gif)
 
 
 # 配置环境（python==3.6.2）
