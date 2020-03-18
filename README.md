@@ -6,7 +6,6 @@
 
 ![demo-1.gif](https://github.com/AshleyXM/Financial-Chatbot/blob/master/demo/demo-1.gif)
 
-![demo-2.gif](https://github.com/AshleyXM/Financial-Chatbot/blob/master/demo/demo-2.gif)
 
 # 配置环境（python==3.6.2）
 
